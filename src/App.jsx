@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import { useForm, ValidationError } from '@formspree/react'
 import './App.css'
 import Navbar from './components/Navbar'
