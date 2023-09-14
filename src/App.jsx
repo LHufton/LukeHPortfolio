@@ -1,6 +1,14 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useForm, ValidationError } from '@formspree/react'
 import './App.css'
+import Navbar from './components/Navbar'
+import Lead from './components/Lead'
+import About from './components/About'
+import Experience from './components/Experience'
+import Project from './components/Project'
+import Skill from './components/Skill'
+import Contact from './components/Contact'
+import Footer from './components/Footer'
 
 function App() {
   return (
@@ -12,6 +20,16 @@ function App() {
     </div>
   )
 }
+;<React.StrictMode>
+  <Navbar />
+  <Lead />
+  <About />
+  <Experience />
+  <Project />
+  <Skill />
+  <Contact />
+  <Footer />
+</React.StrictMode>
 
 function ContactForm() {
   const [state, handleSubmit] = useForm('xrgwqjoj')
